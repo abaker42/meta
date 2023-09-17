@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 import styles from "../styles";
 import { slideIn, staggerContainer, textVariant } from "@/utils/motion";
 import Image from "next/image";
-import cover from '../public/cover.png'
-import stamp from '../public/stamp.png'
+import cover from '../../public/cover.png'
+import stamp from '../../public/stamp.png'
 import Link from "next/link";
 
 function Hero() {

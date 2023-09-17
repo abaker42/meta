@@ -2,8 +2,8 @@
 import { motion } from 'framer-motion'
 import styles from '../styles'
 import { navVariants } from '@/utils/motion'
-import search from '../public/akar-icons_search.svg';
-import burger from '../public/menu.svg'
+import search from '../../public/akar-icons_search.svg';
+import burger from "../../public/menu.svg";
 import Image from 'next/image'
 function Navbar() {
   return (

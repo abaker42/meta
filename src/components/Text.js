@@ -1,5 +1,5 @@
-'use client'
-import {motion} from 'framer-motion'
+"use client";
+import { motion } from "framer-motion";
 import { textContainer, textVariant2 } from "@/utils/motion";
 
 export function TypingText({ title, textStyles }) {
@@ -17,7 +17,16 @@ export function TypingText({ title, textStyles }) {
 	);
 }
 
-export function TitleText({title, textStyles}) {
-	return <h2>Title Text</h2>;
+export function TitleText({ title, textStyles }) {
+	return (
+		<motion.h2
+			variants={textVariant2}
+			initial='hidden'
+			whileInView='show'
+			viewport={{ once: false, amount: 0.25 }}
+			className={`mt-[8px] font-bold md:text-[64] text-[40px] text-white ${textStyles}`}
+		>
+			{title}
+		</motion.h2>
+	);
 }
-

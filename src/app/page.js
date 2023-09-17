@@ -11,19 +11,28 @@ import  World from '@/sections/World'
 
 function Home() {
   return (
-    <div className="bg-slate-800 overflow-hidden">
-      <Navbar />
-      <Hero />
-      <About />
-      <Explore />
-      <GetStarted />
-      <WhatsNew />
-      <World />
-      <Insights />
-      <Feedback />
-      <Footer />
-    </div>
-  )
+		<div className='bg-slate-800 overflow-hidden'>
+			<Navbar />
+			<Hero />
+			<div className='relative'>
+				<About />
+				<div className='gradient-03 z-0' />
+				<Explore />
+			</div>
+			<div className='relative'>
+				<GetStarted />
+				<div className='gradient-04 z-0' />
+				<WhatsNew />
+			</div>
+			<World />
+			<div className='relative'>
+				<Insights />
+				<div className='gradient-04 z-0' />
+				<Feedback />
+			</div>
+			<Footer />
+		</div>
+	);
 }
 
 export default Home
